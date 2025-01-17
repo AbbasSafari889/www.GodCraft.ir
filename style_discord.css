@@ -1,0 +1,125 @@
+/* استایل کلی */
+body {
+    font-family: 'Vazir', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #2c3e50, #34495e);
+    color: #ecf0f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* محتوای اصلی */
+.main-container {
+    width: 90%;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* هدر صفحه */
+.header {
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.header h1 {
+    font-size: 3rem;
+    color: #ffcc00;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+}
+
+.header p {
+    font-size: 1.4rem;
+    color: #f39c12;
+    margin-top: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* جعبه انیمیشن */
+.content-box {
+    position: relative;
+    margin-top: 20px;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.animation-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 10px solid #3498db;
+    border-top: 10px solid #ffcc00;
+    animation: spin 1.5s linear infinite; /* انیمیشن چرخش */
+    margin-bottom: 20px;
+}
+
+.message h2 {
+    font-size: 2.2rem;
+    color: #ffcc00;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    margin-bottom: 15px;
+}
+
+.message p {
+    font-size: 1.2rem;
+    color: #bdc3c7;
+    line-height: 1.5;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* لینک هدایت */
+.note {
+    font-size: 1rem;
+    color: #ecf0f1;
+    margin-top: 20px;
+}
+
+.note a {
+    color: #3498db;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.note a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+/* پانوشت */
+.footer {
+    margin-top: 30px;
+    color: #bdc3c7;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* انیمیشن‌ها */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

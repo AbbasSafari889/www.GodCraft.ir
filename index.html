@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>God Craft</title>
+    <link rel="stylesheet" href="style_main.css">
+</head>
+<body>
+    <header class="hero">
+        <h1>God Craft</h1>
+        <p class="welcome-message">خوش آمدید به بهترین سرور مانکرفت!</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Hoom</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="discord.html">Discord</a></li>
+                <!-- دکمه قوانین خرید -->
+                <li><a href="rules.html" class="rules-btn">rules Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-content">
+        <h2>درباره سرور</h2>
+        <p>سرور گاد کرفت با ارائه گیم مودهای مختلف، امکانات و تجربه‌ای بی‌نظیر به شما ارائه می‌دهد. بازی کنید، دوستان خود را دعوت کنید و از تجربه جدید لذت ببرید</p>
+
+        <div class="game-mods">
+            <h3> گیم مود های سرور گاد کرفت :</h3>
+            
+            <div class="game-mod" id="survival">
+                <h4>Survival SMP </h4>
+                <p>گیم مود سرورایول، تجربه‌ای از بقا در دنیای سروایوال است. در این گیم مود باید منابع خود را جمع‌آوری کنید و به بقا ادامه دهید.</p>
+                <button class="game-btn active">on</button>
+            </div>
+            
+            <div class="game-mod" id="bedwars">
+                <h4>Bed Wars</h4>
+                <p>در گیم مود بدوارز، تیم خود را ساخته و با دشمنان به رقابت بپردازید تا برنده شوید</p>
+                <button class="game-btn inactive">off</button>
+            </div>
+            
+            <div class="game-mod" id="livesmp">
+                <h4>Life SMP</h4>
+                <p>گیم مود Life SMP , دنیای باز و زندگی واقعی را در ماینکرافت به شما ارائه می‌دهد</p>
+                <button class="game-btn inactive">off</button>
+            </div>
+        </div>
+
+        <div class="about-server">
+            <div class="description">
+                <h2> God Craft server </h2>
+                <p>بزرگ ترین سرور ایران جایی که شما با دوست هایتان میتوانید در ارامش به بازی کردن به پردازید </p>
+                <a href="#" class="copy-btn" onclick="copyToClipboard()">Play, GodCraft.ir</a>
+            </div>
+            <div class="server-image">
+                <img src="https://www.legendcraft.ir/Images/Sky-House.png" alt="تصویر سرور">
+            </div>
+        </div>
+
+        <div class="discord-section">
+            <h3>پیوستن به دیسکورد</h3>
+            <p>برای دریافت جدیدترین اخبار و اطلاع‌رسانی‌ها به سرور دیسکورد ما بپیوندید.</p>
+            <a href="https://discord.gg/ZhBN5SYe" class="discord-btn">پیوستن به دیسکورد</a>
+        </div>
+    </section>
+
+    <footer>
+        <p> All site rights belong to God Craft server. There is no problem to copy by mentioning the source. The year 2022 </p>
+    </footer>
+
+    <script>
+        function copyToClipboard() {
+            const el = document.createElement('textarea');
+            el.value = 'Play.GodCraft.ir'; // متن آدرس که کپی می‌شود
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+            alert('آدرس Play.GodCraft.ir کپی شد!');
+        }
+    </script>
+</body>
+</html>
